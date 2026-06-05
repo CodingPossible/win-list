@@ -4,6 +4,6 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def home():
+def index():
     """Simple placeholder greeting"""
-    return "Welcome to the Flask app!"  
+    return "Welcome to Win List!"  
