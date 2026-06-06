@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--ensure website looks good on all devices-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--info for search engines-->
+        <meta name="author" content="Win List App">
+        <meta name="description" content="Focus on the positive side of productivity">
+        <meta name="robots" content="noindex, follow">
+        <meta name="theme-color" content="#7393B3">
+        <!--future consideration: add light/dark mode color differentiation-->
+
+        <!--Include only if/when I want Popper for tooltips, dropdowns and popovers
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        -->
+
+        <!-- Bootstrap's JS and CSS capability-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!--in future, if I want to use React, Vue or Angular, must get framework specific JavaScript paackage to avoid Race Condition bugs-->
+
+        <!--my CSS styling-->
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Win List</title>
+    </head>
+    <body>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </body>
+</html>

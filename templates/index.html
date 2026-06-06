@@ -1,84 +1,15 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
+ {% block content %}
 
-<html lang="en">
-    <head>
-        <!--ensure website looks good on all devices-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--info for search engines-->
-        <meta name="author" content="Win List App">
-        <meta name="description" content="Focus on the positive side of productivity">
-        <meta name="robots" content="noindex, follow">
-        <meta name="theme-color" content="#7393B3">
-        <!--future consideration: add light/dark mode color differentiation-->
-
-        <!--font maybe for future
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-        -->
-
-        <!--Include only if/when I want Popper for tooltips, dropdowns and popovers
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        -->
-
-        <!-- Bootstrap's JS and CSS capability-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <!--in future, if I want to use React, Vue or Angular, must get framework specific JavaScript paackage to avoid Race Condition bugs-->
-
-        <!--my CSS styling-->
-        <link href="styles.css" rel="stylesheet">
-
-        <!--my JavaScript scripts-->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                // JavaScript here
-            });
-        </script>
-
-        <title>Win List</title>
-    </head>
-    <body>
-        
-        <!--Bootstrap Navbar-->
-        <!--
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="list.html">The WIN List</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="plot.html">Plotter's Paradise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="forest.html">Forest Fieldtrips</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    -->
+         <!--Home page content-->
 
         <h1> Coming Soon: Win List </h1>
 
         <!--About win-list-->
-        <img src="https://codingpossible.github.io/Images/StickProgrammer.jpg" alt="Stick Programmer" class="rounded">
+        <img src="https://win-list.onrender.com/static/images/stick400.jpg" alt="400" class="rounded">
         <div class="info">
             <p> Focus on the positive side of productivity </p>
         </div>
+{% endblock %}
 
-        <footer>
-            <em>Win List</em>
-        </footer>
-    </body>
-</html>
+
